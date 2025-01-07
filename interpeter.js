@@ -11,11 +11,8 @@ topScore.print = function (value) {
   return value;
 };
 
-topScore.array = function () {
-  let array = [];
-  for (let element of arguments) {
-    array.push(element);
-  }
+topScore.array = function (...args) {
+  let array = [...args];
 
   return array;
 };
